@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inria+Serif:wght@300;400&family=Jockey+One&family=Jost&family=Lato&family=Poiret+One&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto:wght@400;500;700;900&family=Rubik:wght@700&family=Ruslan+Display&family=Staatliches&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.page{
+  background: linear-gradient(156.72deg, #E6EEFF 28.87%, rgba(230, 238, 255, 0) 103.1%);
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatScreen{
+  width: 360px;
+  height: 800px;
+  background-color: white;
+  border: 7px solid white;
+  border-radius: 20px;
+  
+}
+.roboName{
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 10px 15px;
+  justify-content: space-between;
+  background-color: #eff3fd;
+  border-radius: 20px 20px 0px 0px;
+}
+.botright{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  
+}
+.botright img{
+  height: 70px;
+  
+}
+.botname h3{
+  height: 10px;
+  font-size: 20px;
+  color: #4c82ef;
+  font-weight: 800;
+}
+.botname h4{
+  height: 10px;
+  font-size: 18px;
+  color: #4c82ef;
+  font-weight: 700;
+}
+.online{
+  height: 10px;
+  font-size: 16px;
+  color: #4c82ef;
+  font-weight: 700;
+  margin-bottom: 10px;
+  
+  
+}
+.online span{
+  color: rgb(71, 228, 71);
+  
+}
+.msgScreen{
+  padding: 0px 15px;
+  height: 620px;
+  
+}
+.botmsg{
+  width: 250px;
+  background: linear-gradient(100.24deg, #E6EEFF 13.91%, #FFFFFF 116.73%);
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 0px;
+  font-size: 13px;
+  font-family: 'poppins';
+}
+.time{
+  font-size: small;
+  margin: 0px;
+  padding: 5px;
+  color:#333333;
+  font-size: 13px;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  justify-items: end;
+  align-items: end;
+}
+
+.usermsg{
+  width: 250px;
+  background: #DCF7C5;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 0px;
+  font-size: 13px;
+  font-family: 'poppins';
+}
+
+.tags{
+  font-family: 'poppins';
+  color: #949494;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.tag{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag button{
+  background: #F2F7FF;
+  color: #4C82EF;
+  border: 1px solid #4C82EF;
+  border-radius: 5px; 
+  height: 30px;
+  padding: 0px 10px;
+  font-size: 13px;
+}
+.robo{
+  margin: 10px 0px;
+}
+.product{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 10px;
+}
+.product img{
+  height: 50px;
+  width: 70px;
+}
+.pname{
+  height: 10px;
+  margin: 0px;
+  font-size: 13px;
+}
+.pcount{
+  height: 10px;
+  font-size: 13px;
+  
+}
+.filter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tags{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.unselected{
+  background: #f6f7f9;
+  color: #a8a9aa;
+  border: 1px solid #e2e2e4;
+  border-radius: 5px; 
+  height: 30px;
+  padding: 0px 10px;
+}
+.selectedbtn{
+  background: #f6f7f9;
+  color: #4C82EF;
+  border: 1px solid #4C82EF;
+  border-radius: 5px; 
+  height: 30px;
+  padding: 0px 10px;
+}
+
+.msgsend{
+  background: linear-gradient(100.27deg, #EFF3FD 33.17%, rgba(239, 243, 253, 0) 122.24%);
+  height: 80px;
+  border-radius: 0px 0px 20px 20px;
+ 
+}
+.msgtop{
+  display: flex;
+}
+.msgbox{
+  background: white;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  height: 30px;
+  width: 80%;
+  border-radius: 10px;
+}
+.msgbox input{
+  outline: none;
+  border: none;
+ 
+  width: 90%;
+  
+}
+
+.msgsend button{
+  height: 30px;
+  margin: 10px 5px;
+  width: 20%;
+  background-color: #4C82EF;
+  color: white;
+  font-weight: bolder;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.cname{
+  margin: 0px;
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 13px;
+  color: #B1B1B1;
+}
+.cname span{
+  margin: 0px;
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 13px;
+  font-weight: 600;
+  color: #7A7F8C;
+}
+.verify{
+  color: rgb(157, 157, 74);
+}
+
+@media (max-width: 600px) {
+  .chatScreen{
+    width: 300px;
+    height: 800px;
+    background-color: white;
+    border: 7px solid white;
+    border-radius: 20px;
+    
+  }
+  .botmsg{
+    width: 250px;
+    background: linear-gradient(100.24deg, #E6EEFF 13.91%, #FFFFFF 116.73%);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 0px;
+    font-size: 11px;
+    font-family: 'poppins';
+  }
+  .time{
+    font-size: small;
+    margin: 0px;
+    padding: 5px;
+    color:#333333;
+    font-size: 10px;
+  }
+  
+  .user{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    justify-items: end;
+    align-items: end;
+  }
+  
+  .usermsg{
+    width: 250px;
+    background: #DCF7C5;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 0px;
+    font-size: 11px;
+    font-family: 'poppins';
+  }
+  .botname h3{
+    height: 10px;
+    font-size: 17px;
+    color: #4c82ef;
+    font-weight: 800;
+  }
+  .botname h4{
+    height: 10px;
+    font-size: 15px;
+    color: #4c82ef;
+    font-weight: 700;
+  }
+  .online{
+    height: 10px;
+    font-size: 14px;
+    color: #4c82ef;
+    font-weight: 700;
+  }
+  .tag button{
+    background: #F2F7FF;
+    color: #4C82EF;
+    border: 1px solid #4C82EF;
+    border-radius: 5px; 
+    height: 30px;
+    padding: 0px 10px;
+    font-size: 11px;
+  }
+  .unselected{
+    background: #f6f7f9;
+    color: #a8a9aa;
+    border: 1px solid #e2e2e4;
+    border-radius: 5px; 
+    height: 30px;
+    font-size: 10px;
+    padding: 0px 10px;
+  }
+  .selectedbtn{
+    background: #f6f7f9;
+    color: #4C82EF;
+    border: 1px solid #4C82EF;
+    border-radius: 5px; 
+    height: 30px;
+    font-size: 10px;
+    padding: 0px 10px;
+  }
+  
+}
